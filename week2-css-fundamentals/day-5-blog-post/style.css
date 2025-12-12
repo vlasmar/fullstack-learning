@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+.blog-post {
+    margin: 3em 4em;
+}
+
+.blog-post h1 {
+    margin-bottom: 0.2em;
+}
+
+.blog-post h2 {
+    padding-left: 1em;
+    font-style: italic;
+}
+
+.blog-post .date {
+    font-style: italic;
+    padding: 1em 0;
+}
+
+.blog-post button {
+    padding: 0.5em 1em;
+    background-color: rgb(66, 66, 194);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.blog-post img {
+    max-width: 50%;
+    height: auto;
+    padding: 1em 0;
+    display: block;
+}
+
+.blog-post p {
+    padding: 2em 0;
+}
+
+.blog-post blockquote {
+    font-style: italic;
+}
+
+.blog-post a {
+    color: rgb(66, 66, 194);
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    cursor: pointer;
+    color: purple;
+    font-size: 1.2em;
+}
