@@ -1,0 +1,21 @@
+html {
+    background-color: rgb(100, 11, 253);
+}
+
+body {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    width: 512px;
+    height: 100%;
+    margin: 10vh auto;
+    padding: 20px 50px;
+    line-height: 1.2;
+    border-radius: 25px;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
