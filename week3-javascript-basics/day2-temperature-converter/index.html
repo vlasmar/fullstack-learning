@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 - Mini project</title>
+</head>
+<body>
+    <h1>Temperature converter</h1>
+    <h2>Celcius to Fahrenheit</h2>
+    <p id="converter" style="color:blue"></p>
+
+    <script>
+        const tempConverter = celcius => celcius * (9/5) + 32;
+
+        console.log(tempConverter(22));
+
+        document.getElementById("converter").textContent = `${tempConverter(35)}`;
+    </script>
+</body>
+</html>
