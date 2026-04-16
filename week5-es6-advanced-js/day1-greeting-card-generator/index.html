@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="card">
+        <h1>Greeting Card Generator</h1>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <div class="color-input">
+            <label for="color">Select Color: </label>
+            <input type="color" id="color" value="#764ba2" required>
+        </div>
+
+        <input type="submit" id="button-submit" value="Generate">
+
+        <div class="output hidden"></div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
