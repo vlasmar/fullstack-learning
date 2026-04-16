@@ -1,0 +1,40 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 5rem 0;
+}
+
+#new-task {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+#submit {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+#tasks li {
+    list-style-type: none;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 8rem;
+}
