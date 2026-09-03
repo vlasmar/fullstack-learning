@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    color: rgb(109, 109, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+#validator-box {
+    width: 350px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(48, 48, 48);
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#result {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.valid {
+    color: green;
+    background-color: #d4edda;
+}
+
+.invalid {
+    color: red;
+    background-color: #f8d7da;
+}
