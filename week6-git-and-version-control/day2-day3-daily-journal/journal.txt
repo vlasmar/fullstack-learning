@@ -1,0 +1,8 @@
+Day 1: Introduction to Git
+Day 2: Git Workflow & Commit History
+Day 3: Branching & Merging
+Day 4: Remote Repositories & Github
+Day 5: Undoing Changes & Resetting
+Day 6: Collaboration & Pull Requests
+Day 7: Weekly Project: Personal Portfolio
+
