@@ -1,0 +1,125 @@
+:root {
+    --page-background: #F4F1EA;
+    --main-card: #FFFFFF;
+    --heading:	#2D3142;
+    --quote-text:	#3D405B;
+    --author:	#8D6E63;
+    --button:	#7A5C61;
+    --button-hover:	#5F4549;
+    --small-decorative-element:	#D8B4A0;
+    --main-font: "Playfair Display";
+    --secondary-font: "Poppins";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--page-background);
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+h1, #quote {
+    font-family: var(--main-font), sans-serif;
+}
+
+#new-quote, #author {
+    font-family: var(--secondary-font), sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--heading);
+}
+
+hr {
+    width: 120px;
+    border: 1px solid var(--small-decorative-element);
+}
+
+.card {
+    background-color: var(--main-card);
+    width: min(600px, 100%);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 10px 5px 9px 0px rgba(0,0,0,0.25);
+}
+
+#quote::before {
+    content: open-quote;
+    font-size: 30px;
+}
+
+#quote::after {
+    content: close-quote;
+    font-size: 30px;
+}
+
+#quote {
+    width: 100%;
+    color: var(--quote-text);
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#name {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: var(--author);
+    text-align: end;
+    margin-top: 20px;
+}
+
+#new-quote {
+    background-color: var(--button);
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    transition: background-color 0.3s ease;
+}
+
+#new-quote:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;  
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    #quote {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
