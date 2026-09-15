@@ -1,0 +1,120 @@
+:root {
+    --page-background: #F4F7FB;
+    --main-card: #FFFFFF;
+    --main-accent:	#4F46E5;
+    --name:	#172033;
+    --labels:	#64748B;
+    --contact-text:	#334155;
+    --borders:	#E2E8F0;
+    --icon-background:	#EEF2FF;
+    --main-font: "Inter";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--page-background);
+    min-height: 100vh;
+    font-family: var(--main-font), sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    width: min(400px, 100%);
+    background-color: var(--main-card);
+    border: 1px solid var(--borders);
+    border-radius: 16px; 
+    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.25);
+}
+
+#avatar {
+    border: 1px solid var(--borders);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: var(--main-accent);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    color: var(--name);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#subtitle {
+    font-size: 14px;
+    font-weight: normal;
+    color: gray;
+}
+
+hr {
+    width: 120px;
+    border: 1px solid var(--borders);
+}
+
+.contact-item {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--main-accent);
+    background-color: var(--icon-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    color: var(--labels);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#email, #phone {
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--contact-text);
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+}
