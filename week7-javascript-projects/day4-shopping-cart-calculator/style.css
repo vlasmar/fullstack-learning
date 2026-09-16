@@ -1,0 +1,139 @@
+:root {
+    --page-background: #F5F7FA;
+    --main-card: #FFFFFF;
+    --primary-color: #2563EB;
+    --primary-hover: #1D4ED8;
+    --heading: #111827;
+    --normal-text: #374151;
+    --muted-text: #6B7280;
+    --border: #E5E7EB;
+    --product-price: #059669;
+    --expensive-item-highlight:	#FEF3C7;
+    --total-background:	#EFF6FF;
+    --total-text: #1D4ED8;
+    --error-warning: #DC2626;
+    --primary-font: "Inter", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--page-background);
+    color: var(--normal-text);
+    font-family: var(--primary-font);
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: var(--heading);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: min(1200px, 100%);
+}
+
+section {
+    width: 100%;
+    max-width: none;
+    background-color: var(--main-card);
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+h2 {
+    color: var(--heading);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--heading);
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--product-price);
+}
+
+.subtotal {
+    text-align: right;
+}
+
+.quantity, .total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.total-price {
+    background-color: var(--total-background);
+    color: var(--total-text);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#total {
+    color: var(--total-text);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#product-list {
+    font-size: 15px;
+}
+
+#expensive-items {
+    background-color: var(--expensive-item-highlight);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.expensive-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .sections {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .sections {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        width: 100%;
+    }
+}

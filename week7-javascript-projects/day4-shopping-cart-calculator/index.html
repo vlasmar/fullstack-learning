@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+        <h1>Shopping Cart Calculator</h1>
+        <hr>
+        <p>Manage your products and calculate your shopping cart total.</p>
+        </header>
+        <div class="sections">
+            <section class="shopping-cart-section">
+                <h2>Shopping Cart</h2>
+                <div id="product-list"></div>
+            </section>
+            <section class="cart-summary-section">
+                <h2>Cart Summary</h2>
+                <dl>
+                    <div class="quantity">
+                        <dt>Number of products</dt>
+                        <dd id="number-of-products"></dd>
+                    </div>
+                    <div class="quantity">
+                        <dt>Total quantity</dt>
+                        <dd id="total-quantity"></dd>
+                    </div>
+                </dl>
+                <div class="total-price">
+                    <p>Total Price</p>
+                    <p id="total"></p>
+                </div>
+            </section>
+            <section class="expensive-section">
+                <h2>Expensive Items</h2>
+                <div id="expensive-items">
+                <!-- JavaScript will display items here -->
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
